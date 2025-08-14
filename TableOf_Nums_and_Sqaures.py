@@ -1,4 +1,5 @@
 # Create a table printing n natural numbers and their squares
+# Practice Question | Homework
 
 n = int (input ("Enter the number of entries you want in the table: "))
 for i in range (1,n+1):
