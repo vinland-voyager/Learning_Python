@@ -4,10 +4,27 @@
 
 '''
 1. Student Name
-2. Student's total attendance
-If eligible (i.e., >75%):
-3. Student's total marks
-4. Calculate results
+2. Student's total attendance: comprises for 15% value
+3. Student's total marks: comprises for 70% value
+4. Student's club: comprises for 15% value
+5. Calculate results
+'''
+
+s_name = input("Please enter your name: ")
+s_attendance = int(input("Please enter your total attendance out of 100: "))
+s_marks = int(input("Please enter your total marks out of 100: "))
+clubs = ["hackfire", "dance", "music", "fashion", "poetry"]
+s_club = str.lower(input("Are you in any of these clubs: Hackfire | Dance | Music | Fashion | Poetry? If so, please enter the name of your club: "))
+
+if s_club in clubs:
+    result = (s_attendance*0.15) + (s_marks*0.7) + 15
+else:
+    result = (s_attendance*0.15) + (s_marks*0.7)
+
+print("Your result: ", result)
+
+'''
+# Discard:
 5. Check eligibility for rewards:
 - Attendance >95%:
 -- Marks >95%: 5% attendance benefit in the next semester, Dean's Certificate for Excellence and 500rs cash prize
@@ -18,14 +35,8 @@ If eligible (i.e., >75%):
 -- Marks >90%: Dean's certificate for Excellence
 - Attendance >85%:
 -- Marks >95%: Dean's Certificate for Excellence
-'''
 
-s_name = input("Please enter your name: ")
-s_attendance = int(input("Please enter your total attendance: "))
-if s_attendance >= 75:
-    s_marks = int(input("Please enter your total marks: "))
-else:
-    print("You're not eligible for examinations, let alone rewards.")
+Rewards:
 
 if s_attendance >= 95:
     if s_marks >= 95:
@@ -50,3 +61,4 @@ elif s_attendance >= 85:
         print("Sorry, you are not eligible for any rewards. Better luck next semester.")
 else:
     print("Sorry, you are not eligible for any rewards. Better luck next semester.")
+'''
