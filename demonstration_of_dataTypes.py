@@ -7,7 +7,7 @@ noneVar = None
 listVar = [1, 2, 3, "exString"]
 setVar = {2, 3, 3, 4, 4, "name", "name", "test", "test"}
 tupleVar = (3, 4, 5.8)
-dictVar = {"Name": "21", "Age": 21}
+dictVar = {"Name": "Aayush", "Age": 21}
 
 print(intVar, "| This is", type(intVar), "data type.")
 print(floatVar, "| This is", type(floatVar), "data type.")
@@ -19,4 +19,3 @@ print(listVar, "| This is", type(listVar), "data type.")
 print(setVar, "| This is", type(setVar), "data type.")
 print(tupleVar, "| This is", type(tupleVar), "data type.")
 print(dictVar, "| This is", type(dictVar), "data type.")
-
